@@ -32,7 +32,7 @@ VAI→POT:
 | 20220805_164511 | 61.16 | 73.33    | 56.34     | 61.72 | 66.12 | 1.16    | 53.3  | [link](https://1drv.ms/u/s!Avyk1WkEG_5JvU7wvXCSDH-JJJ0H?e=fuhxHq) |
 | 20220805_180439 | 76.83 | 87.17    | 61.38     | 55.94 | 65.24 | 1.16    | 57.81 | [link](https://1drv.ms/u/s!Avyk1WkEG_5JvU8eD531wMbnWDco?e=MoWzXe) |
 | 20220808_143609 | 75.47 | 87.54    | 60.86     | 52.24 | 65.23 | 0.11    | 56.91 | [link](https://1drv.ms/u/s!Avyk1WkEG_5JvVDVJsy5gPjbiNON?e=HKd6Vw) |
-| Mean            | 71.15 | 82.68    | 59.53     | 56.63 | 65.53 | 0.81    | 56.01 |                                                                   |
+| **Mean**        | 71.15 | 82.68    | 59.53     | 56.63 | 65.53 | 0.81    | 56.01 |                                                                   |
 
 ### Setup Datasets
 
