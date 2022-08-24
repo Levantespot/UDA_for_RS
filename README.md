@@ -81,8 +81,8 @@ For more information about datasets, please refer to [Prepare datasets](https://
 To ensure reproduction, the random seed has been fixed in the code. Still, you may need to train a few times to reach the comparable performance. A training job can be launched using:
 
 ```shell
-python -m tools.train "configs/uda_rs/potsdam2isprs_uda_pt7_local7_label_warm_daformer_mitb5.py" // POT to VAI
-python -m tools.train "configs/uda_rs/isprs2potsdam_uda_pt7_local7_label_warm_daformer_mitb5.py" // VAI to POT
+python -m tools.train "configs/uda_rs/potsdam2isprs_uda_pt7_local7_label_warm_daformer_mitb5.py" # POT to VAI
+python -m tools.train "configs/uda_rs/isprs2potsdam_uda_pt7_local7_label_warm_daformer_mitb5.py" # VAI to POT
 ```
 
 By default, logs and checkpoints are stored in `work_dirs/<experiments>` with this structure:
