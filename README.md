@@ -12,7 +12,7 @@
 
 ### Pretrained weights & Checkpoints
 
-1. Please download the [MiT weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K provided by the official [SegFormer repository](https://github.com/NVlabs/SegFormer) and put them in a folder `pretrained/` within this project. Only use mit_b5.pth are uesd in our experiments.
+1. Please download the [MiT weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K provided by the official [SegFormer repository](https://github.com/NVlabs/SegFormer) and put them in a folder `pretrained/` within this project. Only `mit_b5.pth` are uesd in our experiments.
 
 2. We provide three checkpoints for each domain adaptation on POT→VAI and VAI→POT. Please put them in `work_dirs/`.
 
@@ -81,7 +81,8 @@ For more information about datasets, please refer to [Prepare datasets](https://
 To ensure reproduction, the random seed has been fixed in the code. Still, you may need to train a few times to reach the comparable performance. A training job can be launched using:
 
 ```shell
-python -m tools.train "configs/uda_rs/potsdam2isprs_uda_pt7_local7_label_warm_daformer_mitb5.py"
+python -m tools.train "configs/uda_rs/potsdam2isprs_uda_pt7_local7_label_warm_daformer_mitb5.py" // POT to VAI
+python -m tools.train "configs/uda_rs/isprs2potsdam_uda_pt7_local7_label_warm_daformer_mitb5.py" // VAI to POT
 ```
 
 By default, logs and checkpoints are stored in `work_dirs/<experiments>` with this structure:
