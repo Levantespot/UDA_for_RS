@@ -59,7 +59,6 @@ After re-organizing, the datasets have the following structures:
 │   ├── potsdam
 │   │   ├── ann_dir
 │   │   │   ├── train
-│   │   │   ├── train_ori
 │   │   │   └── val
 │   │   └── img_dir
 │   │       ├── train
