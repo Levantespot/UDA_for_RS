@@ -1,5 +1,16 @@
 ## Unsupervised Domain Adaptation for Remote Sensing Semantic Segmentation with Transformer
 
+Our article has been published in Remote Sensing as part of
+the Special Issue Deep Learning for Satellite Image Segmentation!
+
+[HTML Version](https://www.mdpi.com/2072-4292/14/19/4942/htm) | [PDF Version](https://www.mdpi.com/2072-4292/14/19/4942/pdf)
+
+If you find this project useful in your research, please consider citing:
+
+```
+Li, W.; Gao, H.; Su, Y.; Momanyi, B.M. Unsupervised Domain Adaptation for Remote Sensing Semantic Segmentation with Transformer. Remote Sens. 2022, 14, 4942. https://doi.org/10.3390/rs14194942
+```
+
 ## Preparation
 
 ### Pre-requisites
