@@ -2,8 +2,8 @@ _base_ = [
     '../_base_/default_runtime.py',
     # DAFormer Network Architecture with weighted loss
     '../_base_/models/daformer_sepaspp_mitb5.py',
-    # Vaihingen->Potsdam Data Loading
-    '../_base_/datasets/uda_vaihingen_to_potsdam.py',
+    # Potsdam->Vaihingen Data Loading
+    '../_base_/datasets/uda_potsdam_to_vaihingen.py',
     # Basic UDA Self-Training
     '../_base_/uda/dacs.py',
     # AdamW Optimizer
@@ -25,7 +25,7 @@ data = dict(samples_per_gpu=4)
 uda = dict(
     alpha=0.9,
     pseudo_threshold=0.7,
-    dynamic_class_weight=False,
+    dynamic_class_weight=True,
     pseudo_kernal_size=7,
     local_ps_weight_type='label',
 )
@@ -45,12 +45,12 @@ optimizer = dict(
 n_gpus = 1
 runner = dict(type='IterBasedRunner', max_iters=4000)
 # Logging Configuration
-checkpoint_config = dict(by_epoch=False, interval=1000, max_keep_ckpts=3)
+checkpoint_config = dict(by_epoch=False, interval=1000, max_keep_ckpts=4)
 evaluation = dict(interval=400, metric='mIoU')
 # Meta Information for Result Analysis
-name = 'isprs2potsdam_uda_pt7_local7_label_warm_daformer_mitb5'
+name = 'potsdam2isprs_uda_pt7_local7_label_warm_daformer_mitb5'
 exp = 'basic'
-name_dataset = 'vaihingen2potsdam'
+name_dataset = 'potsdam2vaihingen'
 name_architecture = 'daformer_sepaspp_mitb5'
 name_encoder = 'mitb5'
 name_decoder = 'daformer_sepaspp'
